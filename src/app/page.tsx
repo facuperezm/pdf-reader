@@ -25,8 +25,6 @@ export default async function Home() {
     await supabase.from("documents").insert(data);
   }
 
-  main(contentTest);
-
   // Create a new row in the "posts" table
   async function create(fd: FormData) {
     "use server";
